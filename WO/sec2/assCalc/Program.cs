@@ -7,9 +7,9 @@ namespace assCalc
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Uti.ColorPrint("Welcome to assCalc!");
+            Uti.ColorPrint("Welcome to assCalc!!!!");
             Calc.Add(5, 5);
         }
     }
