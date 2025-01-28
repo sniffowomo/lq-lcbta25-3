@@ -16,9 +16,9 @@ namespace assCalc.src
         public static void PrintHeader(string header)
         {
             Console.WriteLine($@"
------------------------------------
+{"_____________________________".Pastel(Color.DarkRed)}
 {header.Pastel(Color.Cyan)}
------------------------------------
+{"______________________________".Pastel(Color.DarkRed)}
             ");
 
         }
