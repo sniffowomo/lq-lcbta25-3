@@ -15,29 +15,30 @@ namespace assCalc
 
         }
     }
+}
 
-    class SubPrograms
+class SubPrograms
+{
+    public static void AssCalc()
     {
-        public static void AssCalc()
-        {
-            Console.Clear();
-            Uti.ColorPrint("Welcome to assCalc!!!!");
+        Console.Clear();
+        Uti.ColorPrint("Welcome to assCalc!!!!");
 
-            // Calculator functions
-            int add = Calc.Add(5, 5);
-            int sub = Calc.Subtract(10, 5);
-            int mul = Calc.Multiply(5, 5);
-            int div = Calc.Divide(10, 5);
+        // Calculator functions
+        int add = Calc.Add(5, 5);
+        int sub = Calc.Subtract(10, 5);
+        int mul = Calc.Multiply(5, 5);
+        int div = Calc.Divide(10, 5);
 
-            Console.WriteLine($@"
+        Console.WriteLine($@"
 Addition:       {add.ToString().Pastel(Color.Green)}
 Subtraction:    {sub.ToString().Pastel(Color.Cyan)}
 Multiplication: {mul.ToString().Pastel(Color.Yellow)}
 Division:       {div.ToString().Pastel(Color.Magenta)}
 ".Trim());
 
-            Uti.ColorPrint("Thank you for using assCalc!!!!");
+        Uti.ColorPrint("Thank you for using assCalc!!!!");
 
-        }
     }
 }
+
