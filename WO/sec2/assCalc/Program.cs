@@ -10,6 +10,16 @@ namespace assCalc
     {
         static void Main()
         {
+            // SubPrograms.AssCalc();
+            Calc2.Calc2Main();
+
+        }
+    }
+
+    class SubPrograms
+    {
+        public static void AssCalc()
+        {
             Console.Clear();
             Uti.ColorPrint("Welcome to assCalc!!!!");
 

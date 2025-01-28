@@ -12,5 +12,15 @@ namespace assCalc.src
         {
             Console.WriteLine($"{message}".Pastel(Color.FromArgb(255, 255, 0)));
         }
+
+        public static void PrintHeader(string header)
+        {
+            Console.WriteLine($@"
+-----------------------------------
+{header.Pastel(Color.Cyan)}
+-----------------------------------
+            ");
+
+        }
     }
 }
