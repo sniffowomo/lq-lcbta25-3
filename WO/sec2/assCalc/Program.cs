@@ -1,6 +1,5 @@
 ﻿// Main entry point 
 
-
 using assCalc.src;
 
 namespace assCalc
@@ -9,6 +8,7 @@ namespace assCalc
     {
         static void Main()
         {
+            Console.Clear();
             Uti.ColorPrint("Welcome to assCalc!!!!");
 
             // Addition
