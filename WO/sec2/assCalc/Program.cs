@@ -19,9 +19,13 @@ namespace assCalc
             int mul = Calc.Multiply(5, 5);
             int div = Calc.Divide(10, 5);
 
-            Console.WriteLine(@$"
-Addition: {add}.Pastel(Color.Green);
-");
+            Console.WriteLine($@"
+Addition: {add.ToString().ColorPrint(ConsoleColor.Green)}
+Subtraction: {sub.ToString().ColorPrint(ConsoleColor.Cyan)}
+Multiplication: {mul.ToString().ColorPrint(ConsoleColor.Yellow)}
+Division: {div.ToString().ColorPrint(ConsoleColor.Magenta)}
+".Trim());
+
 
 
             Uti.ColorPrint("Thank you for using assCalc!!!!");
