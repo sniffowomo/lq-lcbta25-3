@@ -16,13 +16,13 @@ export NC='\033[0m' # No Color
 hea1() {
     echo -e "${CYAN}============================="
     $1
-    # echo -e "Nuget Pkg Installers - https://www.nuget.org/PACKAGES"
-    # echo -e "1. Pastel - https://www.nuget.org/packages/Pastel"
+    $2
     echo -e "=============================${NC}"
 }
 
 b1() {
-    hea1 "How are u "
+    hea1 "Nuget Pkg Installers - https://www.nuget.org/PACKAGES"
+    hea1 "1. Pastel - https://www.nuget.org/packages/Pastel"
 }
 
 c1() {
