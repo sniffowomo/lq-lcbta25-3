@@ -1,6 +1,8 @@
 ﻿// Main entry point 
 
 using assCalc.src;
+using Pastel;
+using System.Drawing;
 
 namespace assCalc
 {
