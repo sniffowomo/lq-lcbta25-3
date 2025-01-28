@@ -11,21 +11,16 @@ namespace assCalc
             Console.Clear();
             Uti.ColorPrint("Welcome to assCalc!!!!");
 
-            // Addition
+            // Calculator functions
             int add = Calc.Add(5, 5);
-            Uti.ColorPrint($"Result: {add}");
-
-            // Subtraction
             int sub = Calc.Subtract(10, 5);
-            Uti.ColorPrint($"Result: {sub}");
-
-            // Multiplication
             int mul = Calc.Multiply(5, 5);
-            Uti.ColorPrint($"Result: {mul}");
-
-            // Division
             int div = Calc.Divide(10, 5);
-            Uti.ColorPrint($"Result: {div}");
+
+            Console.WriteLine(@$"
+Addition: {add}.Pastel(Color.Green);
+");
+
 
             Uti.ColorPrint("Thank you for using assCalc!!!!");
 
