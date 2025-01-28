@@ -1,8 +1,7 @@
 ﻿// Main entry point 
 
-using Pastel;
-using System;
-using System.Drawing;
+
+using src.Uti;
 
 namespace assCalc
 {
@@ -10,7 +9,7 @@ namespace assCalc
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to assCalc!".Pastel(Color.FromArgb(255, 255, 0)));
+            Uti.ColorPrint("Welcome to assCalc!");
         }
     }
 }
