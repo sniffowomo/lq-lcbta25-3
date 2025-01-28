@@ -39,13 +39,13 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Restore dependencies
-        run: dotnet restore PANTYPUSSY/pantypussy.csproj
+        run: dotnet restore PANTYPUSSY/PANTYPUSSY.sln
 
       - name: Build
-        run: dotnet build PANTYPUSSY/pantypussy.csproj --configuration Release --no-restore
+        run: dotnet build PANTYPUSSY/PANTYPUSSY.sln --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test PANTYPUSSY/pantypussy.csproj --no-build --verbosity normal --logger "trx;LogFileName=TestResults/test-results.trx"
+        run: dotnet test PANTYPUSSY/PANTYPUSSY.sln --no-build --verbosity normal --logger "trx;LogFileName=TestResults/test-results.trx"
 
       - name: Publish Test Results
         uses: actions/upload-artifact@v4
@@ -55,7 +55,7 @@ jobs:
         if: always()
 
       - name: Publish Single File Executable
-        run: dotnet publish PANTYPUSSY/pantypussy.csproj --configuration Release -r ${{ matrix.runtime }} --self-contained -o ./publish /p:PublishSingleFile=true /p:PublishTrimmed=true /p:TrimMode=link
+        run: dotnet publish PANTYPUSSY/PANTYPUSSY.sln --configuration Release -r ${{ matrix.runtime }} --self-contained -o ./publish /p:PublishSingleFile=true /p:PublishTrimmed=true /p:TrimMode=link
 
       - name: List Publish Directory (Debugging)
         run: |
