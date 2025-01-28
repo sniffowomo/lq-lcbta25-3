@@ -28,7 +28,8 @@ c1() {
     CO1="dotnet add package Pastel --version 6.0.1"
     CO2="dotnet list package"
     echo -e "${GREEN}Executing Command: ${NC}${CO1}"
-    eval $CO1 $CO2
+    eval "$CO1"
+    eval "$CO2"
 }
 
 # Execution
