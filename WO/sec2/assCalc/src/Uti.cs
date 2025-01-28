@@ -4,7 +4,7 @@ using Pastel;
 using System;
 using System.Drawing;
 
-namespace src.Uti
+namespace assCalc.src
 {
     public class Uti
     {

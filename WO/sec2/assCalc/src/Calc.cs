@@ -1,6 +1,6 @@
 // Main Calculator function 
 
-namespace src.Calc
+namespace assCalc.src
 {
     public class Calc
     {

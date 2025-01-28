@@ -1,8 +1,7 @@
 ﻿// Main entry point 
 
 
-using src.Uti;
-using src.Calc;
+using assCalc.src;
 
 namespace assCalc
 {
