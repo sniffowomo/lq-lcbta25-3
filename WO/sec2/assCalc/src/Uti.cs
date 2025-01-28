@@ -10,7 +10,7 @@ namespace assCalc.src
     {
         public static void ColorPrint(string message)
         {
-            Console.WriteLine("Welcome to assCalc!".Pastel(Color.FromArgb(255, 255, 0)));
+            Console.WriteLine($"{message}".Pastel(Color.FromArgb(255, 255, 0)));
         }
     }
 }
