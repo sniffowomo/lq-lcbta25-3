@@ -21,8 +21,7 @@ hea1() {
 }
 
 b1() {
-    hea1 "Nuget Pkg Installers - https://www.nuget.org/PACKAGES"
-    hea1 "1. Pastel - https://www.nuget.org/packages/Pastel"
+    hea1 "Nuget Pkg Installers - https://www.nuget.org/PACKAGES" "1. Pastel - https://www.nuget.org/packages/Pastel"
 }
 
 c1() {
