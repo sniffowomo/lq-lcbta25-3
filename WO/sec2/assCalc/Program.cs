@@ -2,6 +2,7 @@
 
 
 using src.Uti;
+using src.Calc;
 
 namespace assCalc
 {
@@ -10,6 +11,7 @@ namespace assCalc
         static void Main(string[] args)
         {
             Uti.ColorPrint("Welcome to assCalc!");
+            Calc.Add(5, 5);
         }
     }
 }
