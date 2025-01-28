@@ -15,7 +15,7 @@ namespace buty1.src
                 Color.BlueViolet };
             foreach (var color in colors)
             {
-                Console.WriteLine("Hello World!".Pastel(color));
+                Console.WriteLine("AssSmeller".Pastel(color));
             }
         }
     }
