@@ -22,11 +22,13 @@ header() {
 
 # Function to create a new project and solution
 create_new_project_and_solution() {
-    echo -e "${GREEN}[-] Enter the name of the new project: ${NC}"
+    echo -e "${GREEN}[-] Enter the name of the new project (default: MyNewProject): ${NC}"
     read -r project_name
+    project_name=${project_name:-MyNewProject}
 
-    echo -e "${GREEN}[-] Enter the name of the solution: ${NC}"
+    echo -e "${GREEN}[-] Enter the name of the solution (default: MyNewSolution): ${NC}"
     read -r solution_name
+    solution_name=${solution_name:-MyNewSolution}
 
     # Create the project
     header "Creating new project: $project_name"
@@ -61,11 +63,19 @@ create_new_project_and_solution() {
 
 # Function to add a new project to an existing solution
 add_project_to_existing_solution() {
-    echo -e "${GREEN}[-] Enter the name of the new project: ${NC}"
+    echo -e "${GREEN}[-] Enter the name of the new project (default: MyNewProject): ${NC}"
     read -r project_name
+    project_name=${project_name:-MyNewProject}
 
-    echo -e "${GREEN}[-] Enter the path to the existing solution file (.sln): ${NC}"
+    echo -e "${GREEN}[-] Enter the path to the existing solution file (.sln) (default: ./MyExistingSolution.sln): ${NC}"
     read -r solution_path
+    solution_path=${solution_path:-./MyExistingSolution.sln}
+
+    # Check if the solution file exists
+    if [ ! -f "$solution_path" ]; then
+        echo -e "${RED}[!] Solution file '$solution_path' does not exist.${NC}"
+        return 1
+    fi
 
     # Create the new project
     header "Creating new project: $project_name"
