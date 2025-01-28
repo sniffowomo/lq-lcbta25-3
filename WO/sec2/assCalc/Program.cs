@@ -20,10 +20,10 @@ namespace assCalc
             int div = Calc.Divide(10, 5);
 
             Console.WriteLine($@"
-Addition: {add.ToString().ColorPrint(ConsoleColor.Green)}
-Subtraction: {sub.ToString().ColorPrint(ConsoleColor.Cyan)}
-Multiplication: {mul.ToString().ColorPrint(ConsoleColor.Yellow)}
-Division: {div.ToString().ColorPrint(ConsoleColor.Magenta)}
+Addition: {add.ToString().Pastel(Color.Green)}
+Subtraction: {sub.ToString().Pastel(Color.Cyan)}
+Multiplication: {mul.ToString().Pastel(Color.Yellow)}
+Division: {div.ToString().Pastel(Color.Magenta)}
 ".Trim());
 
 
