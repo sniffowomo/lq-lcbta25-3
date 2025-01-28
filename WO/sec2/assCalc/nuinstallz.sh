@@ -15,8 +15,8 @@ export NC='\033[0m' # No Color
 # Commands
 hea1() {
     echo -e "${CYAN}============================="
-    $1
-    $2
+    echo -e "$1"
+    echo -e "$2"
     echo -e "=============================${NC}"
 }
 
