@@ -13,8 +13,16 @@ export WHITE='\033[0;37m'
 export NC='\033[0m' # No Color
 
 # Commands
+hea1() {
+    echo -e "${CYAN}============================="
+    $1
+    # echo -e "Nuget Pkg Installers - https://www.nuget.org/PACKAGES"
+    # echo -e "1. Pastel - https://www.nuget.org/packages/Pastel"
+    echo -e "=============================${NC}"
+}
+
 b1() {
-    echo -e "${RED} hey"
+    hea1 "How are u "
 }
 
 c1() {
