@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "assCalc", "assCalc\assCalc.csproj", "{BFD82B9E-9485-4C45-94D9-59BC9B21CA95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "strings38", "strings38\strings38.csproj", "{90786B3B-BE75-4DD0-B4E2-6B929C9E2FFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "works2", "works2\works2.csproj", "{90786B3B-BE75-4DD0-B4E2-6B929C9E2FFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
