@@ -2,6 +2,7 @@
 
 using Pastel;
 using System.Drawing;
+using works2.src;
 
 namespace works2
 {
@@ -10,7 +11,7 @@ namespace works2
         static void Main()
         {
             Console.Clear();
-            Console.WriteLine("Hello World!".Pastel(Color.Green));
+            Console.WriteLine("Hello World!".Pastel(Color.DarkGoldenrod));
         }
     }
 }
