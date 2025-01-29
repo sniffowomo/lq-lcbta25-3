@@ -10,8 +10,7 @@ namespace works2
     {
         static void Main()
         {
-            Console.Clear();
-            Console.WriteLine("Hello World!".Pastel(Color.DarkGoldenrod));
+            Lesson32.MainFunc();
         }
     }
 }
