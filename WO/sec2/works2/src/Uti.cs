@@ -20,7 +20,9 @@ namespace works2.src
         public static void PrintHeader2(string header)
         {
             Console.WriteLine($@"
-            {"───── ⋆⋅☆⋅⋆ ─────".Pastel(Color.DarkRed)}");
+{"───── ".Pastel(Color.DarkViolet)}
+{header.Pastel(Color.Cyan)}
+{"───── ".Pastel(Color.DarkViolet)}");
         }
     }
 }

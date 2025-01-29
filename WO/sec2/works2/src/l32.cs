@@ -14,6 +14,7 @@ namespace works2.src
 
         public static void String1()
         {
+            Uti.PrintHeader2("String 1");
             // String 1 
             int a = 10, b = 20, c = 30;
 
