@@ -54,16 +54,24 @@ Choice: {choice.Pastel(Color.Orange)}
             }
             else if (choice == "S")
             {
-
-                Console.WriteLine($"Subtraction: {Calc.Subtract(num1, num2)}".Pastel(Color.Cyan));
+                Console.WriteLine($@"
+{"---------- SUBTRACTION----------".Pastel(Color.Cyan)}
+{Calc.Subtract(num1, num2).ToString().Pastel(Color.Cyan)}
+{"---------- SUBTRACTION----------".Pastel(Color.Cyan)}");
             }
             else if (choice == "M")
             {
-                Console.WriteLine($"Multiplication: {Calc.Multiply(num1, num2)}".Pastel(Color.Yellow));
+                Console.WriteLine($@"
+{"---------- MULTIPLICATION----------".Pastel(Color.Yellow)}
+{Calc.Multiply(num1, num2).ToString().Pastel(Color.Yellow)}
+{"---------- MULTIPLICATION----------".Pastel(Color.Yellow)}");
             }
             else if (choice == "D")
             {
-                Console.WriteLine($"Division: {Calc.Divide(num1, num2)}".Pastel(Color.Magenta));
+                Console.WriteLine($@"
+{"----------DIVISION----------".Pastel(Color.Magenta)}
+{Calc.Divide(num1, num2).ToString().Pastel(Color.Magenta)}
+{"----------DIVISION----------".Pastel(Color.Magenta)}");
             }
             else
             {
@@ -72,9 +80,9 @@ Choice: {choice.Pastel(Color.Orange)}
 
 
             // Exiting operation
-            Console.WriteLine("Press any key to exit".Pastel(Color.Peru));
-            Console.ReadKey();
-            Console.WriteLine("Exiting...".Pastel(Color.Yellow));
+            // Console.WriteLine("Press any key to exit".Pastel(Color.Peru));
+            // Console.ReadKey();
+            // Console.WriteLine("Exiting...".Pastel(Color.Yellow));
 
         }
     }
