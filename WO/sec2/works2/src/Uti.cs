@@ -12,9 +12,9 @@ namespace works2.src
         public static void PrintHeader(string header)
         {
             Console.WriteLine($@"
-{"_____________________________".Pastel(Color.DarkRed)}
+{"───── ⋆⋅☆⋅⋆ ─────".Pastel(Color.DarkRed)}
 {header.Pastel(Color.Cyan)}
-{"______________________________".Pastel(Color.DarkRed)}
+{"───── ⋆⋅☆⋅⋆ ─────".Pastel(Color.DarkRed)}
             ");
 
         }
