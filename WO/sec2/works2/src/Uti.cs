@@ -13,8 +13,7 @@ namespace works2.src
             Console.WriteLine($@"
 {"───── ⋆⋅☆⋅⋆ ─────".Pastel(Color.DarkRed)}
 {header.Pastel(Color.Cyan)}
-{"───── ⋆⋅☆⋅⋆ ─────".Pastel(Color.DarkRed)}
-            ");
+{"───── ⋆⋅☆⋅⋆ ─────".Pastel(Color.DarkRed)}");
         }
 
         public static void PrintHeader2(string header)
