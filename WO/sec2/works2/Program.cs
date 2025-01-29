@@ -10,8 +10,7 @@ namespace works2
     {
         static void Main()
         {
-            Lesson32.MainFunc();
-            Lesson32.String1();
+            Lesson39.MainFunc();
         }
     }
 }
