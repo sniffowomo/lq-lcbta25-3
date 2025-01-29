@@ -7,7 +7,7 @@ namespace assCalc.src
         // Header function 
         public static void Calc2Main()
         {
-            Uti.PrintHeader("Calculator 2");
+            Uti.PrintHeader("Calculator 2 - Assignment");
         }
     }
 }
