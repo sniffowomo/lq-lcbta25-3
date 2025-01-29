@@ -14,6 +14,7 @@ namespace assCalc.src
             Uti.PrintHeader("Calculator 2 - Assignment");
         }
 
+        // Note the actual operations are coming from Calc.cs
         public static void Calc2App()
         {
             // Getting inputs, diplaying it and exiting
