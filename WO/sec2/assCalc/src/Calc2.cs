@@ -40,6 +40,32 @@ Input2: {num2.ToString().Pastel(Color.Aqua)}
 {"---------- CHOOSE OPERATION ----------".Pastel(Color.Blue)}
 ");
             var choice = Console.ReadLine().ToUpper();
+            Console.WriteLine($@"
+{"---------- CHOICE----------".Pastel(Color.Blue)}
+Choice: {choice.Pastel(Color.Orange)}
+{"---------- CHOICE----------".Pastel(Color.Blue)}
+");
+            if (choice == "A")
+            {
+                Console.WriteLine($"Addition: {Calc.Add(num1, num2)}".Pastel(Color.Green));
+            }
+            else if (choice == "S")
+            {
+                Console.WriteLine($"Subtraction: {Calc.Subtract(num1, num2)}".Pastel(Color.Cyan));
+            }
+            else if (choice == "M")
+            {
+                Console.WriteLine($"Multiplication: {Calc.Multiply(num1, num2)}".Pastel(Color.Yellow));
+            }
+            else if (choice == "D")
+            {
+                Console.WriteLine($"Division: {Calc.Divide(num1, num2)}".Pastel(Color.Magenta));
+            }
+            else
+            {
+                Console.WriteLine("Bastard Wrong Choice".Pastel(Color.Red));
+            }
+
 
             // Exiting operation
             Console.WriteLine("Press any key to exit".Pastel(Color.Peru));
