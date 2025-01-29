@@ -23,9 +23,15 @@ namespace assCalc.src
             int num2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine($@"
+---------- INPUTS ----------            
 Input1: {num1.ToString().Pastel(Color.Plum)}
 Input2: {num2.ToString().Pastel(Color.Aqua)}
+----------------------------
             ");
+
+            Console.WriteLine("Press any key to exit".Pastel(Color.Peru));
+            Console.ReadKey();
+            Console.WriteLine("Exiting...".Pastel(Color.Yellow));
 
         }
     }
