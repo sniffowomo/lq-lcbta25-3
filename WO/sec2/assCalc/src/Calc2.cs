@@ -16,6 +16,7 @@ namespace assCalc.src
 
         public static void Calc2App()
         {
+            // Getting inputs, diplaying it and exiting
             Console.WriteLine("Enter the first number: ".Pastel(Color.Plum));
             int num1 = int.Parse(Console.ReadLine());
 
@@ -29,6 +30,18 @@ Input2: {num2.ToString().Pastel(Color.Aqua)}
 {"---------- INPUTS ----------".Pastel(Color.Blue)}
             ");
 
+            // Getting required operations
+            Console.WriteLine($@"
+{"---------- CHOOSE OPERATION ----------".Pastel(Color.Blue)}
+{"[A]ddition".Pastel(Color.Green)}
+{"[S]ubtraction".Pastel(Color.Cyan)}
+{"[M]ultiplication".Pastel(Color.Yellow)}
+{"[D]ivision".Pastel(Color.Magenta)}
+{"---------- CHOOSE OPERATION ----------".Pastel(Color.Blue)}
+");
+            var choice = Console.ReadLine().ToUpper();
+
+            // Exiting operation
             Console.WriteLine("Press any key to exit".Pastel(Color.Peru));
             Console.ReadKey();
             Console.WriteLine("Exiting...".Pastel(Color.Yellow));
