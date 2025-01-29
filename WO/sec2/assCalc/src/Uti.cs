@@ -11,6 +11,7 @@ namespace assCalc.src
         public static void ColorPrint(string message)
         {
             Console.WriteLine($"{message}".Pastel(Color.FromArgb(255, 255, 0)));
+            Console.WriteLine($"{message}".Pastel(Color.AliceBlue));
         }
 
         public static void PrintHeader(string header)
