@@ -37,4 +37,4 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "newproject", "path\newproje
 🧟 | 👩‍💻
 --- | ---
 [`assCalc`](./assCalc/) | 1st assigment of making a calculator
-[]
+[`works2`](./works2/) | Second continuation of work form thetutoza
