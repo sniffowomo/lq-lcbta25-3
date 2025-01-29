@@ -47,10 +47,14 @@ Choice: {choice.Pastel(Color.Orange)}
 ");
             if (choice == "A")
             {
-                Console.WriteLine($"Addition: {Calc.Add(num1, num2)}".Pastel(Color.Green));
+                Console.WriteLine($@"
+{"---------- ADDITION----------".Pastel(Color.Green)}
+{Calc.Add(num1, num2).ToString().Pastel(Color.Green)}
+{"---------- ADDITION----------".Pastel(Color.Green)}");
             }
             else if (choice == "S")
             {
+
                 Console.WriteLine($"Subtraction: {Calc.Subtract(num1, num2)}".Pastel(Color.Cyan));
             }
             else if (choice == "M")
