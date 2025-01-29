@@ -8,7 +8,6 @@ namespace works2.src
 {
     public class Uti
     {
-
         public static void PrintHeader(string header)
         {
             Console.WriteLine($@"
@@ -16,7 +15,12 @@ namespace works2.src
 {header.Pastel(Color.Cyan)}
 {"───── ⋆⋅☆⋅⋆ ─────".Pastel(Color.DarkRed)}
             ");
+        }
 
+        public static void PrintHeader2(string header)
+        {
+            Console.WriteLine($@"
+            {"───── ⋆⋅☆⋅⋆ ─────".Pastel(Color.DarkRed)}");
         }
     }
 }

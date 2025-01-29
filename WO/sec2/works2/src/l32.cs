@@ -16,8 +16,10 @@ namespace works2.src
         {
             // String 1 
             int a = 10, b = 20, c = 30;
+
             string s = "The values are " + a + ", " + b + ", and " + c;
-            Console.WriteLine(s.Pastel(Color.Green));
+
+            Console.WriteLine($" Strings in sequence - {a}, {b}, {c}".Pastel(Color.Yellow));
 
         }
     }
