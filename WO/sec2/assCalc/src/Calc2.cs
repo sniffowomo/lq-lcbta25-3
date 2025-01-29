@@ -16,7 +16,17 @@ namespace assCalc.src
 
         public static void Calc2App()
         {
-            Console.WriteLine("Enter the first number: ".Pastel(Color.AliceBlue));
+            Console.WriteLine("Enter the first number: ".Pastel(Color.Plum));
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number: ".Pastel(Color.Aqua));
+            int num2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($@"
+Input1: {num1.ToString().Pastel(Color.Plum)}
+Input2: {num2.ToString().Pastel(Color.Aqua)}
+            ");
+
         }
     }
 }

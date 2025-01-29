@@ -10,8 +10,10 @@ namespace assCalc
     {
         static void Main()
         {
+            Console.Clear();
             // SubPrograms.AssCalc();
-            Calc2.Calc2Main();
+            Calc2.Calc2Header();
+            Calc2.Calc2App();
 
         }
     }
